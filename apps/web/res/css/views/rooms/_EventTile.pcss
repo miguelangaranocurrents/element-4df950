@@ -138,6 +138,8 @@ $left-gutter: 64px;
         background-color: inherit;
         color: inherit; /* inherit the colour from the dark or light theme by default (but not for code blocks) */
         flex: 1;
+        /* Don't let wide content (e.g. code blocks) stretch the body past its flex container, such as when edited */
+        min-width: 0;
 
         pre,
         code {
